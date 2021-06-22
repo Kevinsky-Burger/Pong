@@ -39,8 +39,8 @@ ball.shape("square")
 ball.color("white")
 ball.penup()
 ball.goto(0, 0)
-ball.dx = random.randint(5,10) / 40
-ball.dy = random.randint(1,5) / 40
+ball.dx = random.uniform(0.1,0.2)
+ball.dy = random.uniform(0,0.1)
 
 # Pen
 pen = turtle.Turtle()
@@ -99,8 +99,8 @@ while True:
 
     if ball.xcor() > 410:
         ball.goto(0, 0)
-        ball.dx = random.randint(5,10) / 40
-        ball.dy = random.randint(1,5) / 40
+        ball.dx = random.uniform(0.1,0.2)
+        ball.dy = random.uniform(0,0.1)
         ball.dx *= -1
         score_a += 1
         pen.clear()
@@ -109,8 +109,8 @@ while True:
 
     if ball.xcor() < -410:
         ball.goto(0, 0)
-        ball.dx = random.randint(5,10) / 40
-        ball.dy = random.randint(1,5) / 40
+        ball.dx = random.uniform(0.1,0.2)
+        ball.dy = random.uniform(0,0.1)
         ball.dx *= -1
         score_b = 1
         pen.clear()
