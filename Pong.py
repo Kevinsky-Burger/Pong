@@ -112,7 +112,7 @@ while True:
         ball.dx = random.uniform(0.1,0.2)
         ball.dy = random.uniform(0,0.1)
         ball.dx *= -1
-        score_b = 1
+        score_b += 1
         pen.clear()
         pen.write("{} : {}".format(score_a, score_b), align="center", font=("Courier", 24, "normal"))
         time.sleep(1)
